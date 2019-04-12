@@ -3,14 +3,13 @@ const HtmlWebPackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
-  mode: "production",
   devtool: "inline-source-map",
   entry: [path.resolve(__dirname, "src/index")],
   target: "web",
   output: {
     path: path.resolve(__dirname, "dist"),
     publicPath: "/",
-    filename: "bundle.js"
+    filename: "main.js"
   },
   plugins: [
     new HtmlWebPackPlugin({
